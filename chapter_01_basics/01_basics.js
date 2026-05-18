@@ -1,6 +1,9 @@
-let i = 1;
+let username = "Vikas";
+let loginAttempts = 3;
+let isBlocked = false;
 
-while (i <= 15) {
-    console.log(i);
-    i++;
+if (loginAttempts < 5 && !isBlocked) {
+    console.log(username + " can login");
+} else {
+    console.log("Access denied");
 }
